@@ -1,5 +1,4 @@
 .page {
-
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
@@ -16,10 +15,9 @@
   max-height: 756px;
   /* выше установили ограничения для секции */
   display: flex;
+  align-items: center;
   position: relative;
   background-color: #f2f2f2;
-  box-sizing: border-box;
-  align-items: center;
 }
 
 .logo {
@@ -35,11 +33,8 @@
 }
 
 .header__title {
-  display: inline-flex;
-  margin: 0;
-  align-self: center;
+  margin: 0 0 0 64px;
   width: 730px;
-  margin-left: 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
@@ -47,7 +42,7 @@
 }
 
 .header__subtitle {
-  margin: 0;
+  margin: auto;
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -86,18 +81,16 @@
   display: flex;
   justify-content: center;
   background-color: #ffffff;
+  padding-top: 100px;
 }
-.two-colums {
+.two-columns {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   width: 80%;
-  padding-top: 100px;
-
 }
 
-.two-colums__brief {
-  align-self: flex-start;
+.two-columns__brief {
   width: 175px;
   margin:0;
   line-height: 1.2;
@@ -106,23 +99,22 @@
   color: #2f80ed;
 }
 
-.two-colums__main-text {
+.two-columns__main-text {
   width: 80%;
   min-width: 784px;
-
 }
 
-.two-colums__paragraph {
+.two-columns__paragraph {
   line-height: 34px;
   font-size:24px;
   font-weight: normal;
-  margin-top: 30px;
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
-.two-colums__paragraph:first-of-type {
-  margin-top: 0;
-  }
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
+}
 
 .span-accent {
   font-weight: bold;
@@ -134,7 +126,6 @@
   align-items: center;
   background-color: #ffffff;
   padding: 100px 0;
-
 }
 
 .section-title {
@@ -142,7 +133,6 @@
   line-height: 1.15;
   font-size:60px;
   font-weight: 600;
-
 }
 
 .section-subtitle {
@@ -288,7 +278,6 @@
   justify-content: space-between;
   color: white;
   width: 90%;
-
 }
 
 .footer__column_content_copyright {
@@ -296,7 +285,6 @@
   flex-direction: column;
   justify-content: space-between;
   flex-basis: 711px;
-
 }
 
 .logo_place_footer {
@@ -308,6 +296,7 @@
   font-size:18px;
   font-weight: normal;
   margin: 18px 0;
+  /*display: inline */ /*Вопрос остался не решенным; цитата из конспекта: "абзац займёт ровно те размеры, которые нужны для контента внутри, и окажется на одной строке с другими строчными элементами"*/
 }
 
 .footer__column-heading {
@@ -323,7 +312,6 @@
   font-weight: normal;
   display: flex;
   flex-direction: column;
-
 }
 
 .footer__column-link {
@@ -336,4 +324,3 @@
   width: 16px;
   padding-right: 10px;
 }
-
