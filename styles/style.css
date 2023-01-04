@@ -274,3 +274,78 @@
   height: 877px;
 }
 
+.footer {
+  min-height: 350px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  background-color: #1f1f1f;
+  padding: 60px 0 40px;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 90%;
+
+}
+
+.footer__column {
+
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 711px;
+
+}
+
+.logo_place_footer {
+
+}
+
+.footer_author {
+  line-height: 25px;
+  font-size:18px;
+  font-weight: normal;
+  margin: 18px 0;
+}
+
+.footer__column_content_info {
+
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size:18px;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+.footer__column-links {
+  line-height: 30px;
+  font-size:18px;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer__column-link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__column_content_social {
+
+}
+
+.footer__social-icon {
+  height: 16px;
+  width: 16px;
+  padding-right: 10px;
+}
+
