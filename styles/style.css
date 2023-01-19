@@ -199,7 +199,7 @@
 .video__iframe {
   min-width: 515px;
   min-height: 316px;
-  position: relative;
+  display: flex;
 }
 
 .oakley {
@@ -435,8 +435,20 @@
 
 .resources__logo-zone{
   display: flex;
+
   margin: 80px auto;
-  max-width: 1100px;  
+  max-width: 1100px;
+}
+
+.resources__link {
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 38px;
+}
+
+.resources__logo {
+
 }
 
 .footer {
